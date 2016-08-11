@@ -1,0 +1,24 @@
+{
+  "name": "landingpages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stylus": "stylus -c -u nib home/main.styl -o home",
+    "stylus-dev": "stylus -c -w -u nib home/main.styl -o home"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moisesdelacruz/langingpages.git"
+  },
+  "author": "moisesdelacruz <moiseslacruz16@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moisesdelacruz/langingpages/issues"
+  },
+  "homepage": "https://github.com/moisesdelacruz/langingpages#readme",
+  "devDependencies": {
+    "stylus": "^0.54.5"
+  }
+}
