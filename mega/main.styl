@@ -1,0 +1,164 @@
+@import "../home/normalize"
+
+negro = #151412
+blanco = #D9D8D8
+rojo = #D90007
+verde = #13E03C
+verde-oscuro = #12a22f
+gris-oscuro = #5E5D5C
+gris = #999999
+
+header
+  background negro
+  margin 0
+  padding 0
+  overflow hidden
+  height 48px
+  color blanco
+  position relative
+
+  .logo
+    cursor pointer
+    display inline-block
+    border-radius 50%
+    width 24px
+    height 24px
+    margin 12px 0 0 12px
+    background linear-gradient(to bottom, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.5) 100%)
+    font-weight bold
+    text-align center
+    float left
+    &::before
+    &::after
+      background-position -3px -3px
+      background-repeat no-repeat
+      content ''
+      display block
+      position absolute
+      width 24px
+      height 24px
+      background-image url(https://na.static.mega.co.nz/3/images/mega/top-sprite_v4.svg)
+    &::after
+      opacity 0
+      background-position -3px -33px
+    &::before
+      background-position -3px -3px
+    &:hover
+      background rojo
+      &::after
+        opacity 1
+  // Options of nav
+  .options
+    position absolute
+    right 0
+    div
+      display inline-block
+    .photo
+      width 24px
+      height 24px
+      border-radius 100%
+      overflow hidden
+      margin 11px
+      display inline-block
+      border 2px solid transparent
+      float left
+      img
+        width 100%
+      &:hover
+        border 2px solid blanco
+    .username
+      font-size 13px
+      font-weight lighter
+      margin 1.3em 1em 1.3em 0
+      color blanco
+    .plan
+      background verde-oscuro
+      padding .1em .5em
+      border-radius 10px
+      font-size 12px
+      margin 1.3em .5em
+      &:hover
+        background verde
+    p
+      display inline-block
+    .conect
+      border 2px solid transparent
+      margin 17px 0
+      width .5em
+      height .5em
+      border-radius 50%
+      float left
+      overflow hidden
+      padding 1px
+      .point
+        background #13e03c
+        width 100%
+        height 100%
+        margin -3px 0 6px 0
+        border-radius 100%
+      &:hover
+        border 2px solid gris-oscuro
+    .notifications
+      width 24px
+      height 24px
+      background-image url("https://na.static.mega.co.nz/3/images/mega/top-sprite_v4.svg")
+      background-repeat no-repeat
+      background-color rgba(255,255,255,0.3)
+      background-position -9px -205px
+      border-radius 100%
+      margin 13px
+      float left
+      &:hover
+        background-color gris
+
+    .btn-menu
+      margin 1em
+      padding .4em 10px .4em 27px
+      height 24px
+      border-radius 8px
+      color blanco
+      text-decoration none
+      font-weight lighter
+      font-size 12px
+      background url("https://na.static.mega.co.nz/3/images/mega/top-sprite_v4.svg")
+      background-position -4px -60px
+      background-color rgba(255,255,255,0.3)
+      background-repeat no-repeat
+      &:hover
+        background-color gris
+
+  .content-search
+    float right
+    margin 13px 22em 13px 0
+    border-radius 10px
+    padding 0 2em
+    width 100px
+    background rgba(255, 255, 255, 0.31)
+    height 24px
+    background-image url("https://na.static.mega.co.nz/3/images/mega/top-sprite_v4.svg")
+    background-repeat no-repeat
+    background-position -3px -473px
+    transition width 1s
+
+    .search
+      width 100%
+      border none
+      color white
+      font-size 14px
+      background transparent
+      height calc(100% - 2px)
+
+
+// Page body
+section
+  border 1px solid black
+
+  .left
+    border 1px solid yellow
+  .center
+    border 1px solid green
+  .right
+    border 1px solid orange
+
+footer
+  border 1px solid blue
