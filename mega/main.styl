@@ -5,8 +5,13 @@ blanco = #D9D8D8
 rojo = #D90007
 verde = #13E03C
 verde-oscuro = #12a22f
-gris-oscuro = #5E5D5C
 gris = #999999
+gris-otro = #C5C3C3
+gris-oscuro = #5E5D5C
+gris-mas-oscuro = #2C2B2A
+
+body
+  font-family 'Source Sans Pro', Arial
 
 header
   background negro
@@ -75,7 +80,7 @@ header
       background verde-oscuro
       padding .1em .5em
       border-radius 10px
-      font-size 12px
+      font-size 13px
       margin 1.3em .5em
       &:hover
         background verde
@@ -94,7 +99,7 @@ header
         background #13e03c
         width 100%
         height 100%
-        margin -3px 0 6px 0
+        margin 0 0 8px 0
         border-radius 100%
       &:hover
         border 2px solid gris-oscuro
@@ -119,7 +124,7 @@ header
       color blanco
       text-decoration none
       font-weight lighter
-      font-size 12px
+      font-size 13px
       background url("https://na.static.mega.co.nz/3/images/mega/top-sprite_v4.svg")
       background-position -4px -60px
       background-color rgba(255,255,255,0.3)
@@ -151,14 +156,35 @@ header
 
 // Page body
 section
-  border 1px solid black
+  display flex
+  min-height calc(100vh - 98px)
+
+  .foot
+    position absolute
+    bottom 0
+    background gris-otro
+    width 100%
+    height 130px
+    border-top 1px solid gris-otro
 
   .left
-    border 1px solid yellow
+    background blanco
+    min-width 300px
+    position relative
   .center
-    border 1px solid green
+    flex 100%
+    position relative
+    .foot
+      background white
   .right
-    border 1px solid orange
+    background blanco
+    min-width 300px
+    position relative
 
 footer
-  border 1px solid blue
+  background #2C2B2A
+  height 50px
+  width 100%
+  text-align center
+  color white
+  line-height 50px
