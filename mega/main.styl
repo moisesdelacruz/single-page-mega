@@ -10,6 +10,11 @@ gris-otro = #C5C3C3
 gris-oscuro = #5E5D5C
 gris-mas-oscuro = #2C2B2A
 
+.red
+  color rojo
+.big
+  font-weight bold
+
 body
   font-family 'Source Sans Pro', Arial
 
@@ -159,7 +164,7 @@ section
   display flex
   min-height calc(100vh - 98px)
 
-  .foot
+  .products-bottom-block
     position absolute
     bottom 0
     background gris-otro
@@ -174,15 +179,70 @@ section
   .center
     flex 100%
     position relative
-    .foot
+    .products-bottom-block
       background white
   .right
     background blanco
     min-width 300px
     position relative
+    .products-bottom-block
+      .link
+        background-position -525px 10px
+
+  .left
+  .center
+  .right
+    .products-top-text
+      padding 0 20px
+      text-align center
+      font-size 14px
+      line-height 26px
+      position absolute
+      top 18%
+      a
+        color #333333
+        text-decoration none
+
+  .left
+  .right
+    .animations-left-container
+    .animations-right-container
+      position absolute
+      top 50%
+      width 100%
+      text-align center
+      margin-top -145px
+
+    .products-bottom-block
+      .link
+        background-image url("https://na.static.mega.co.nz/3/images/mega/download-buttons-sprite.png")
+        background-repeat no-repeat
+        background-position -463px -66px
+        background-color white
+        position absolute
+        border-radius 8px
+        border 2px solid rgba(0,0,0,0.3)
+        min-width 209px
+        height 60px
+        top 25%
+        left 30px
+        max-width 234px
+        text-decoration none
+        .text
+          padding-left 70px
+          font-size 17px
+          line-height 24px
+          color #777777
+          white-space nowrap
+  .right
+    .products-bottom-block
+      .link
+        background-position 10px 10px
+
 
 footer
   background #2C2B2A
+  font-size 13px
   height 50px
   width 100%
   text-align center
