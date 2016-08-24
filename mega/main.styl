@@ -24,7 +24,6 @@ header
   background negro
   margin 0
   padding 0
-  overflow hidden
   height 50px
   color blanco
   position relative
@@ -161,6 +160,45 @@ header
       outline none
       height calc(100% - 2px)
 
+  // Navigate menu
+  .menu
+    position absolute
+    z-index 1
+    right 0
+    top 50px
+    background #333
+    border-radius 0 0 0 10px
+    width 200px
+    padding .2em 0
+    display none
+    .items
+      list-style none
+      padding 0
+      margin 0
+      .item
+        padding .5em
+        color #ccc
+        padding 0 26px
+        position relative
+        font-size 14px
+        cursor pointer
+        height 32px
+        line-height 32px
+      .btn-submenu
+        background url("https://na.static.mega.co.nz/3/images/mega/top-sprite_v4.svg")
+        background-position left -348px
+        background-repeat no-repeat
+      .item-divider
+        border-bottom 2px solid rgba(255,255,255,0.1)
+    .submenu
+      background #333
+      position absolute
+      right 0
+      display none
+      border-radius 10px
+      padding .5em 0
+      top 0
+
 
 // Page body
 section
@@ -263,6 +301,7 @@ section
         font-weight 100
         text-align left
         margin-top 1.5em
+        cursor pointer
         span
           display block
           font-size 13px
@@ -270,6 +309,73 @@ section
         &:hover
           background-position -2px -319px
           color rojo
+
+    .download
+      width 412px
+      margin -108px 0 0 -206px
+      position absolute
+      top 50%
+      left 50%
+      .info-block
+        height 83px
+        position relative
+        .type-file
+          background-image url("https://na.static.mega.co.nz/3/images/mega/files-icons_v2.svg")
+          background-position center -10706px
+          background-repeat no-repeat
+          width 82px
+          height 84px
+          display inline-block
+          float left
+        .file-info
+          float left
+          margin-left 1em
+          font-size 20px
+          font-weight lighter
+          .size-info
+            font-size 12px
+          .cloud-with-arrow
+            background-image url("https://na.static.mega.co.nz/3/images/mega/download-sprite-v6.png")
+            background-repeat no-repeat
+            background-position left top
+            width 28px
+            height 25px
+            position absolute
+            bottom 0
+      .buttons-block
+        margin-top 1em
+        .btn
+          width 144px
+          height 54px
+          display inline-block
+          border-radius 5px
+          padding-top 10px
+          color white
+          cursor pointer
+          font-size 20px
+          font-weight lighter
+          span
+            font-size 14px
+            font-weight normal
+            line-height 17px
+            display block
+        .btn-mega
+          background-color rgba( 217,0,7,0.7)
+          background-image url("https://na.static.mega.co.nz/3/images/mega/download-sprite-v6.png")
+          background-repeat no-repeat
+          background-position 18px -124px
+          padding-left 56px
+          margin-right .4em
+          &:hover
+            background-color rojo
+
+        .btn-download
+          background-color #999
+          width 168px
+          height 44px
+          padding 10px 16px
+          &:hover
+            background-color #777
 
 
 footer
