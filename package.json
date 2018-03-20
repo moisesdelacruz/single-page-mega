@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "stylus": "stylus -c -u nib home/main.styl -o home",
-    "stylus-dev": "stylus -c -w -u nib home/main.styl -o home"
+    "stylus": "stylus -c -u nib src/main.styl -o .",
+    "stylus-dev": "stylus -c -w -u nib src/main.styl -o ."
   },
   "repository": {
     "type": "git",
